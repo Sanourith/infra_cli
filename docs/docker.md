@@ -9,13 +9,13 @@ This sections give information about docker images management with k8s-docker-cl
 k8s-docker docker build <PATH> -t <TAG> [-f <DOCKERFILE>]
 ```
 
-## Arguments
+### Arguments
 
 * <PATH> : Link to directory with Dockerfile
 * -t, --tag <TAG> : tag_name for images (required)
 * -f, --dockerfile <DOCKERFILE> : Dockerfile's name (default = Dockerfile)
 
-## eg
+### eg
 
 ```bash
 # Build an image from Dockerfile
@@ -32,4 +32,6 @@ k8s-docker docker build . -t mon-app:1.0.0 -f Dockerfile.prod
 k8s-docker docker push <IMAGE> [-r <REGISTRY>]
 ```
 
-#
+### Arguments
+* <IMAGE> Image name
+* -r, --registry <REGISTRY> adresse for registry (optional)
